@@ -19,7 +19,7 @@ jobs:
         with:
           tf_actions_version: 0.12.18
           tf_actions_subcommand: 'fmt'
-          tf_actions_working_dir: './test/lambdas/tw-syncer'
+          tf_actions_working_dir: './staging/lambdas/tw-syncer'
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -29,7 +29,7 @@ jobs:
         with:
           tf_actions_version: 0.12.18
           tf_actions_subcommand: 'init'
-          tf_actions_working_dir: './test/lambdas/tw-syncer'
+          tf_actions_working_dir: './staging/lambdas/tw-syncer'
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -42,7 +42,7 @@ jobs:
         with:
           tf_actions_version: 0.12.18
           tf_actions_subcommand: 'validate'
-          tf_actions_working_dir: './test/lambdas/tw-syncer'
+          tf_actions_working_dir: './staging/lambdas/tw-syncer'
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -52,7 +52,7 @@ jobs:
         with:
           tf_actions_version: 0.12.18
           tf_actions_subcommand: 'plan'
-          tf_actions_working_dir: './test/lambdas/tw-syncer'
+          tf_actions_working_dir: './staging/lambdas/tw-syncer'
           tf_actions_comment: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -65,7 +65,7 @@ jobs:
         with:
           tf_actions_version: 0.12.18
           tf_actions_subcommand: 'apply'
-          tf_actions_working_dir: './test/lambdas/tw-syncer'
+          tf_actions_working_dir: './staging/lambdas/tw-syncer'
           tf_actions_comment: true
           args: '-var="NODE_ENV=${{ secrets.STAGE_NODE_ENV }}"'
         env:
