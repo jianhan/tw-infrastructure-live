@@ -23,8 +23,8 @@ terraform {
 # LAMBDA FUNCTION
 # ------------------------------------------------------------------------------
 module "tw_syncer_lambda" {
-  source = "github.com/jianhan/tw-infrastructure-modules//lambdas/tw-syncer?ref=v1.0.8"
-  environment_variables = var.lambda_environment_variables
+  source                    = "github.com/jianhan/tw-infrastructure-modules//lambdas/tw-syncer?ref=v1.0.8"
+  environment_variables     = var.lambda_environment_variables
   lambda_function_s3_bucket = "jian-personal-lambdas"
-  lambda_function_s3_key = "tw-syncer/v1.21.0/lambda-v1.21.0.zip"
+  lambda_function_s3_key    = "tw-syncer/v1.21.0/lambda-v1.21.0.zip"
 }
