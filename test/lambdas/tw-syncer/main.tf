@@ -12,7 +12,7 @@ terraform {
   required_version = ">= 0.12"
   backend "s3" {
     bucket         = "jian-personal-terraform-states"
-    key            = "tw-syncer/terraform.tfstate"
+    key            = "tw-infrastructure-live/test/lambdas/tw-syncer.tfstate"
     region         = "ap-southeast-2"
     dynamodb_table = "terraform-locks"
     encrypt        = true
