@@ -68,7 +68,7 @@ jobs:
           tf_actions_working_dir: './staging/lambdas/tw-syncer'
           tf_actions_comment: true
 #          args: '-var="lambda_environment_variables=${{ secrets.TW_SYNCER_STAGING_ARGS }}"'
-          args: '-var="envlambda_environment_variables={NODE_ENV: "staging"}"'
+          args: '-var="lambda_environment_variables={NODE_ENV: \'staging\'}"'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
