@@ -36,5 +36,5 @@ module "tw_syncer_lambda" {
     S3_BUCKET_NAME          = var.s3_bucket_name
   }
   lambda_function_s3_bucket = "jian-personal-lambdas"
-  lambda_function_s3_key    = "tw-syncer/v1.25.16/lambda-v1.25.16.zip"
+  lambda_function_s3_key    = "tw-syncer/v1.25.17/lambda-v1.25.17.zip"
 }
