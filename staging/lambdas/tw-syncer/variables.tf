@@ -7,7 +7,7 @@ variable "node_env" {
 variable "service_name" {
   type        = string
   description = "SERVICE_NAME for labmda"
-  default     = "staging-tw-lambda"
+  default     = "tw-syncer"
 }
 
 variable "consumer_api_key" {
