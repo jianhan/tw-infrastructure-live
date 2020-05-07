@@ -23,7 +23,7 @@ terraform {
 # LAMBDA FUNCTION
 # ------------------------------------------------------------------------------
 module "tw_syncer_lambda" {
-  source = "github.com/jianhan/tw-infrastructure-modules//lambdas/tw-syncer?ref=v1.1.0"
+  source = "github.com/jianhan/tw-infrastructure-modules//lambdas/tw-syncer?ref=v1.1.1"
   environment_variables = {
     NODE_ENV                = var.node_env
     SERVICE_NAME            = var.service_name
